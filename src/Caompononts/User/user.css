@@ -1,0 +1,87 @@
+.user-item {
+    position: relative;
+    padding: 10px 0 10px 10px;
+    /* border-left: 2px solid wheat; */
+    margin-bottom: 10px;
+    background-color: #b9a4e9;
+    border-radius: 5px  ;
+  }
+  .user-item::before {
+    content: "";
+    width: 20px;
+    left: -10px;
+    bottom: 0;
+    background-color: #b9a4e9;
+    height: 15px;
+    position: absolute;
+    z-index: -2;
+    border-radius: 5px;
+  }
+  .user-item::after{
+    content: "";
+    width: 20px;
+    left: -20px;
+    bottom: 3px;
+    background-color: #ba5fc2;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+  
+  }
+  .username {
+    color: #413c3c;
+    background-color: #f7b8b8;
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 5px;
+  }
+  .name {
+    margin: 5px 0;
+  }
+  .company,
+  .address {
+    font-weight: 600;
+    color: #413c3c;
+    font-size: 20px;
+  }
+  .address-title,
+  .company-title {
+    color: #253d8d;
+    margin-bottom: 5px;
+  }
+  .links {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-size: 18px;
+    color: #97dfdf;
+    font-weight: 700;
+  }
+  
+  .link,
+  .tel,
+  .email,
+  .website {
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #7980ce;
+    display: inline-block;
+  }
+  
+  .link:hover,
+  .tel:hover,
+  .email:hover,
+  .website:hover {
+    color: white;
+    background-color: #253d8d;
+  }
+  .id {
+    color: #3f0ba0;
+    font-size: 48px;
+    font-weight: 900;
+    position: absolute;
+    right: 50px;
+  }
